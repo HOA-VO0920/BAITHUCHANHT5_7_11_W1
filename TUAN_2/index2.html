@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Môn Học Yêu Thích</title>
+    <style>
+        /* Toàn bộ ul và li */
+        ul {
+            list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+            padding: 0;
+            margin: 20px auto;
+            max-width: 300px;
+        }
+
+        li {
+            padding: 12px;
+            margin: 8px 0;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Tô màu cho các dòng chẵn và lẻ */
+        li:nth-child(odd) {
+            background-color: #e0f7fa;
+        }
+
+        li:nth-child(even) {
+            background-color: #b2ebf2;
+        }
+
+        /* Hover đổi màu */
+        li:hover {
+            background-color: #00796b;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1> DANH SÁCH CÁC MÔN HỌC YÊU THÍCH</h1>
+    <ul>
+        <li>Toán</li>
+        <li>Thiết kế</li>
+        <li>Vẽ</li>
+        <li>Tiếng Anh</li>
+    </ul> 
+</body>
+</html>
