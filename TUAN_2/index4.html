@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Kí Thông Tin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            width: 30%;
+            font-weight: bold;
+        }
+
+        td input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        td input:focus {
+            border-color: #00796b;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00796b;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        select:focus {
+            border-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>FORM ĐĂNG KÍ THÔNG TIN</h2>  
+        <table>
+            <tr>
+                <th>Họ tên</th>
+                <td><input type="text" placeholder="Nhập họ tên"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" placeholder="Nhập email"></td>
+            </tr>
+            <tr>
+                <th>SĐT</th>
+                <td><input type="tel" placeholder="Nhập số điện thoại"></td>
+            </tr>
+        </table>
+
+        <label>Giới tính:
+            <select name="gender">
+                <option value="nam">Nam</option>
+                <option value="nu">Nữ</option>
+                <option value="khac">Khác</option>
+            </select>
+        </label><br><br>
+
+        <button type="submit">Gửi</button>
+    </form>
+
+</body>
+</html>
