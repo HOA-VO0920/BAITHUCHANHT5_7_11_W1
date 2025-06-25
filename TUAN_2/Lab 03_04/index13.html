@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form đặt bàn quán ăn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #a1d3f6, #57efe5);
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; }
+
+    .form-container {
+      background-color: #ededed;
+      padding: 30px 40px;
+      border-radius: 12px;
+      border: 1px solid #cfdce7;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%; }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #004080; }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: #333;  }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box; }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px; }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;  }
+
+    button:hover {
+      background-color: #005fa3; }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h3>Form đặt bàn quán ăn</h3>
+    <form>
+      <label>Tên:
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Số người:
+        <input type="number" name="people" min="1" required />
+      </label>
+
+      <label>Ngày giờ:
+        <input type="datetime-local" name="datetime" required />
+      </label>
+
+      <label>Yêu cầu đặc biệt:
+        <textarea name="note" placeholder="Nhập yêu cầu nếu có..."></textarea>
+      </label>
+
+      <button type="submit">Đặt bàn</button>
+    </form>
+  </div>
+</body>
+</html>
