@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form đăng nhập</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #f4ffc8, #c5ffa0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-form {
+      background: linear-gradient(to top, #69e5f3,#2b8ace);
+      padding: 30px 40px;
+      width: 60%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login-form h3 {
+      margin-bottom: 20px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .login-form input:focus {
+      border-color: #0077cc;
+    }
+
+    .login-form button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-form button:hover {
+      background-color: #005fa3;
+    }
+
+  </style>
+</head>
+<body>
+  <form class="login-form">
+    <h3>Đăng nhập</h3>
+    <label>Username:<br>
+      <input type="text" name="username" />
+    </label><br>
+    <label>Password:<br>
+      <input type="password" name="password" />
+    </label><br><br>
+    <button type="submit">Đăng nhập</button>
+  </form>
+</body>
+</html>
