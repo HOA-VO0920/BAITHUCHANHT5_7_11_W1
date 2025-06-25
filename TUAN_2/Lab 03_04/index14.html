@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form gửi phản hồi khách hàng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #bcd4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;   }
+
+    form {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%; }
+
+    h3 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 20px; }
+
+    label, p {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;  }
+
+    textarea, input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      margin-top: 8px;
+      box-sizing: border-box; }
+
+    .stars {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;}
+
+    .stars input {
+      display: none; }
+
+    .stars label {
+      font-size: 40px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s; }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;}
+
+    button {
+      margin-top: 25px;
+      padding: 12px;
+      width: 100%;
+      font-size: 1rem;
+      background: linear-gradient(to right, #0077cc, #005fa3);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;}
+
+    button:hover {
+      background: linear-gradient(to right, #005fa3, #003f70);  }
+  </style>
+</head>
+<body>
+  <form>
+    <h3>Form gửi phản hồi khách hàng</h3>
+
+    <p>Đánh giá sao:</p>
+    <div class="stars">
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+    </div>
+
+    <label>Ý kiến:</label>
+    <textarea name="feedback" rows="4" placeholder="Nhập phản hồi của bạn..."></textarea>
+
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="example@email.com" required>
+
+    <button type="submit">Gửi phản hồi</button>
+  </form>
+</body>
+</html>
